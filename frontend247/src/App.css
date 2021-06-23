@@ -1,0 +1,62 @@
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.form input {
+  height: 40px;
+  width: 200px;
+  margin-right: 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+.logiin_button button {
+  border: none;
+  background: #3e3e95;
+  color: #fff;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.Landinpage {
+  margin-top: 50px;
+}
+.getdata_btn {
+  display: flex;
+  margin-top: 50px;
+}
+.getdata_btn button {
+  border: none;
+  background: #3e3e95;
+  color: #fff;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  font-weight: 900;
+  margin-right: 90px;
+}
+.Data1, .Data2{
+  margin-top: 30px;
+}
+.back_btn{
+  margin-bottom: 50px;
+}
+.back_btn button{
+  border: none;
+  background: #3e3e95;
+  color: #fff;
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  font-weight: 900;
+}
