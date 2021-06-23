@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "7a271688-7e9a-4556-8a87-4fd01786cda8",
+		"name": "PracticalTask247",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create users",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/user/create"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"arpit@mail.com\",\r\n  \"password\": \"Arpit@18\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/login"
+			},
+			"response": []
+		},
+		{
+			"name": "get post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcnBpdEBtYWlsLmNvbSIsImV4cCI6MTg4MzU2NDU1MiwiaWF0IjoxNjI0MzY0NTUyfQ.wDleTuJ0jeOdDKjiRBJ4u76bsurYZnw452b2Dp-tZ3iJznbrwNNgh0YU_prhp5HbR9d-vMqT9lz6330-n2Ms9Q"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "get comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/posts/comments"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcnBpdEBtYWlsLmNvbSIsImV4cCI6MTg4MzU2MzIxMSwiaWF0IjoxNjI0MzYzMjExfQ.Qzd243I-aO0CwbZn6EkUEiiAYdnPnnR5OI9GIvLFph0S7vyIrprgBFRTgv2kd_1Ew7iPGBFBpSl0QxWVIfoHRQ"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
